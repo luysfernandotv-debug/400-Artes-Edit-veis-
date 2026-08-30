@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="50%" stop-color="#121212"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </linearGradient>
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCE0AD"/>
+      <stop offset="50%" stop-color="#DDA853"/>
+      <stop offset="100%" stop-color="#9A6F1A"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bg-grad)"/>
+  
+  <!-- Border -->
+  <rect x="15" y="15" width="470" height="470" rx="15" fill="none" stroke="url(#gold-grad)" stroke-width="2" opacity="0.8"/>
+  <rect x="22" y="22" width="456" height="456" rx="10" fill="none" stroke="#DDA853" stroke-width="0.5" opacity="0.2" stroke-dasharray="4 4"/>
+  
+  <!-- Header -->
+  <g transform="translate(250, 70)" text-anchor="middle">
+    <text font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="900" font-size="11" letter-spacing="4" fill="url(#gold-grad)" y="-15">MONUMENTAL LEAGUE</text>
+    <text font-family="'Impact', 'Arial Black', sans-serif" font-size="34" letter-spacing="2" fill="#ffffff" y="20">ARTILHEIRO</text>
+    <text font-family="'Inter', sans-serif" font-weight="500" font-size="10" letter-spacing="6" fill="#DDA853" opacity="0.9" y="38">TABELA DE GOLS DA LEAGUE</text>
+    <line x1="-80" y1="48" x2="80" y2="48" stroke="url(#gold-grad)" stroke-width="1.5" opacity="0.6"/>
+  </g>
+
+  <!-- Main Highlight (Rank 1 player) -->
+  <g transform="translate(50, 160)">
+    <rect width="400" height="70" rx="10" fill="#0f0f0f" stroke="url(#gold-grad)" stroke-width="1"/>
+    <!-- Rank Badge -->
+    <rect x="15" y="15" width="40" height="40" rx="5" fill="#DDA853"/>
+    <text font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="22" fill="#000000" text-anchor="middle" x="35" y="42">01</text>
+    
+    <!-- Player Name and Team -->
+    <text font-family="'Inter', sans-serif" font-weight="900" font-size="16" fill="#ffffff" x="75" y="34">LUCAS SANTOS</text>
+    <text font-family="'Inter', sans-serif" font-weight="700" font-size="10" fill="#DDA853" x="75" y="49">ELITE FC</text>
+    
+    <!-- Goals -->
+    <text font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="28" fill="url(#gold-grad)" text-anchor="end" x="385" y="46">18</text>
+    <text font-family="'Inter', sans-serif" font-weight="500" font-size="9" fill="#888" text-anchor="end" x="385" y="58">GOLS</text>
+  </g>
+
+  <!-- Scorer Rank 2 -->
+  <g transform="translate(50, 245)">
+    <rect width="400" height="55" rx="8" fill="#0c0c0c" stroke="#222" stroke-width="1"/>
+    <rect x="15" y="12" width="30" height="30" rx="4" fill="#222"/>
+    <text font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="16" fill="#ffffff" text-anchor="middle" x="30" y="32">02</text>
+    
+    <text font-family="'Inter', sans-serif" font-weight="900" font-size="13" fill="#ffffff" x="60" y="28">DIEGO COSTA</text>
+    <text font-family="'Inter', sans-serif" font-weight="500" font-size="9" fill="#666" x="60" y="41">MONUMENTAL FC</text>
+    
+    <text font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="20" fill="#ffffff" text-anchor="end" x="385" y="36">14</text>
+  </g>
+
+  <!-- Scorer Rank 3 -->
+  <g transform="translate(50, 310)">
+    <rect width="400" height="55" rx="8" fill="#0c0c0c" stroke="#222" stroke-width="1"/>
+    <rect x="15" y="12" width="30" height="30" rx="4" fill="#222"/>
+    <text font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="16" fill="#ffffff" text-anchor="middle" x="30" y="32">03</text>
+    
+    <text font-family="'Inter', sans-serif" font-weight="900" font-size="13" fill="#ffffff" x="60" y="28">RAFAEL ALMEIDA</text>
+    <text font-family="'Inter', sans-serif" font-weight="500" font-size="9" fill="#666" x="60" y="41">SEU TIME FC</text>
+    
+    <text font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="20" fill="#ffffff" text-anchor="end" x="385" y="36">11</text>
+  </g>
+
+  <!-- Scorer Rank 4 -->
+  <g transform="translate(50, 375)">
+    <rect width="400" height="55" rx="8" fill="#0c0c0c" stroke="#222" stroke-width="1"/>
+    <rect x="15" y="12" width="30" height="30" rx="4" fill="#222"/>
+    <text font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="16" fill="#ffffff" text-anchor="middle" x="30" y="32">04</text>
+    
+    <text font-family="'Inter', sans-serif" font-weight="900" font-size="13" fill="#ffffff" x="60" y="28">JOÃO FERREIRA</text>
+    <text font-family="'Inter', sans-serif" font-weight="500" font-size="9" fill="#666" x="60" y="41">VILA VERDE</text>
+    
+    <text font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="20" fill="#ffffff" text-anchor="end" x="385" y="36">9</text>
+  </g>
+  
+  <!-- Footer Brand -->
+  <g transform="translate(250, 460)" text-anchor="middle">
+    <text font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="9" letter-spacing="3" fill="#666666">ELITE FOOTBALL CREATIVE</text>
+  </g>
+</svg>

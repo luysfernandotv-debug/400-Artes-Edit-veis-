@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="50%" stop-color="#121212"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </linearGradient>
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCE0AD"/>
+      <stop offset="50%" stop-color="#DDA853"/>
+      <stop offset="100%" stop-color="#9A6F1A"/>
+    </linearGradient>
+    <radialGradient id="mvp-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#DDA853" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bg-grad)"/>
+  <rect width="100%" height="100%" fill="url(#mvp-glow)"/>
+  
+  <!-- Border -->
+  <rect x="15" y="15" width="470" height="470" rx="15" fill="none" stroke="url(#gold-grad)" stroke-width="2" opacity="0.8"/>
+  <rect x="22" y="22" width="456" height="456" rx="10" fill="none" stroke="#DDA853" stroke-width="0.5" opacity="0.2" stroke-dasharray="4 4"/>
+  
+  <!-- Header -->
+  <g transform="translate(250, 70)" text-anchor="middle">
+    <text font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="900" font-size="11" letter-spacing="4" fill="url(#gold-grad)" y="-15">MONUMENTAL LEAGUE</text>
+    <text font-family="'Impact', 'Arial Black', sans-serif" font-size="34" letter-spacing="2" fill="#ffffff" y="20">CRAQUE DA RODADA</text>
+    <text font-family="'Inter', sans-serif" font-weight="500" font-size="10" letter-spacing="6" fill="#DDA853" opacity="0.9" y="38">DESTAQUE INDIVIDUAL • M.V.P</text>
+    <line x1="-80" y1="48" x2="80" y2="48" stroke="url(#gold-grad)" stroke-width="1.5" opacity="0.6"/>
+  </g>
+
+  <!-- Player Avatar Emblem -->
+  <g transform="translate(250, 190)" text-anchor="middle">
+    <!-- Star background -->
+    <path d="M0,-35 L8,-12 L30,-12 L12,4 L18,26 L0,12 L-18,26 L-12,4 L-30,-12 L-8,-12 Z" fill="url(#gold-grad)" opacity="0.15" transform="scale(1.5)"/>
+    <!-- Shield -->
+    <path d="M-30,-40 L30,-40 L30,0 C30,20 0,40 0,40 C0,40 -30,20 -30,0 Z" fill="#121212" stroke="url(#gold-grad)" stroke-width="2"/>
+    <text font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="24" fill="url(#gold-grad)" y="8">10</text>
+    <text font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="8" fill="#ffffff" y="-18">ELITE FC</text>
+  </g>
+
+  <!-- Player Name & Stats block -->
+  <g transform="translate(250, 280)" text-anchor="middle">
+    <text font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="24" fill="#ffffff" y="20">LUCAS SANTOS</text>
+    <text font-family="'Inter', sans-serif" font-weight="700" font-size="10" fill="url(#gold-grad)" letter-spacing="4" y="36">MEIA-ATACANTE • MVP</text>
+    
+    <rect x="-150" y="48" width="300" height="45" rx="6" fill="#0c0c0c" stroke="#222" stroke-width="1"/>
+    
+    <!-- Stats inside -->
+    <g transform="translate(0, 58)">
+      <!-- Stat 1 -->
+      <g transform="translate(-80, 0)">
+        <text font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="14" fill="#ffffff" y="0">3</text>
+        <text font-family="'Inter', sans-serif" font-weight="600" font-size="7" fill="#666" y="12">GOLS</text>
+      </g>
+      <!-- Line separator -->
+      <line x1="-30" y1="-8" x2="-30" y2="12" stroke="#222" stroke-width="1"/>
+      <!-- Stat 2 -->
+      <g transform="translate(0, 0)">
+        <text font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="14" fill="#ffffff" y="0">2</text>
+        <text font-family="'Inter', sans-serif" font-weight="600" font-size="7" fill="#666" y="12">ASSISTÊNCIAS</text>
+      </g>
+      <!-- Line separator -->
+      <line x1="30" y1="-8" x2="30" y2="12" stroke="#222" stroke-width="1"/>
+      <!-- Stat 3 -->
+      <g transform="translate(80, 0)">
+        <text font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="14" fill="url(#gold-grad)" y="0">9.8</text>
+        <text font-family="'Inter', sans-serif" font-weight="600" font-size="7" fill="#666" y="12">NOTA DA RODADA</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Footer Brand -->
+  <g transform="translate(250, 460)" text-anchor="middle">
+    <text font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="9" letter-spacing="3" fill="#666666">ELITE FOOTBALL CREATIVE</text>
+  </g>
+</svg>

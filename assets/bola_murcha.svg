@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="50%" stop-color="#121212"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </linearGradient>
+    <linearGradient id="warning-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFA800"/>
+      <stop offset="50%" stop-color="#FF5B00"/>
+      <stop offset="100%" stop-color="#9E0000"/>
+    </linearGradient>
+    <radialGradient id="warning-glow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#FF5B00" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bg-grad)"/>
+  <rect width="100%" height="100%" fill="url(#warning-glow)"/>
+  
+  <!-- Border -->
+  <rect x="15" y="15" width="470" height="470" rx="15" fill="none" stroke="url(#warning-grad)" stroke-width="2" opacity="0.8"/>
+  <rect x="22" y="22" width="456" height="456" rx="10" fill="none" stroke="#FF5B00" stroke-width="0.5" opacity="0.2" stroke-dasharray="4 4"/>
+  
+  <!-- Header -->
+  <g transform="translate(250, 70)" text-anchor="middle">
+    <text font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="900" font-size="11" letter-spacing="4" fill="url(#warning-grad)" y="-15">MONUMENTAL LEAGUE</text>
+    <text font-family="'Impact', 'Arial Black', sans-serif" font-size="34" letter-spacing="2" fill="#ffffff" y="20">BOLA MURCHA</text>
+    <text font-family="'Inter', sans-serif" font-weight="500" font-size="10" letter-spacing="6" fill="#FF5B00" opacity="0.9" y="38">BRINCADEIRA &amp; MEMES DA RODADA</text>
+    <line x1="-80" y1="48" x2="80" y2="48" stroke="url(#warning-grad)" stroke-width="1.5" opacity="0.6"/>
+  </g>
+
+  <!-- Warning Icon representation -->
+  <g transform="translate(250, 190)" text-anchor="middle">
+    <!-- Triangle -->
+    <path d="M 0,-35 L 35,25 L -35,25 Z" fill="none" stroke="url(#warning-grad)" stroke-width="3"/>
+    <text font-family="'Impact', sans-serif" font-size="38" fill="url(#warning-grad)" y="18">!</text>
+  </g>
+
+  <!-- Player Profile Info -->
+  <g transform="translate(250, 290)" text-anchor="middle">
+    <rect x="-140" y="-15" width="280" height="90" rx="10" fill="#0c0c0c" stroke="#222" stroke-width="1"/>
+    
+    <text font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="20" fill="#ffffff" y="18">MARCELO SILVA</text>
+    <text font-family="'Inter', sans-serif" font-weight="700" font-size="10" fill="url(#warning-grad)" letter-spacing="2" y="35">MONUMENTAL FC • Nº 08</text>
+    
+    <!-- Divider -->
+    <line x1="-100" y1="46" x2="100" y2="46" stroke="#222" stroke-width="1"/>
+    
+    <!-- Reasons -->
+    <text font-family="'Inter', sans-serif" font-weight="500" font-size="10" fill="#888" y="60">MÉTRICAS DA RODADA:</text>
+    <text font-family="'Inter', sans-serif" font-weight="700" font-size="11" fill="#FF5B00" y="74">1 Gol Contra • 3 Passes Perdidos</text>
+  </g>
+  
+  <!-- Humorous Footer Note -->
+  <g transform="translate(250, 415)" text-anchor="middle">
+    <text font-family="'Inter', sans-serif" font-size="9.5" font-style="italic" fill="#555">"Mais sorte na próxima rodada, companheiro!"</text>
+  </g>
+
+  <!-- Footer Brand -->
+  <g transform="translate(250, 460)" text-anchor="middle">
+    <text font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="9" letter-spacing="3" fill="#666666">ELITE FOOTBALL CREATIVE</text>
+  </g>
+</svg>

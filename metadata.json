@@ -1,0 +1,6 @@
+{
+  "name": "Artes Esportivas Premium",
+  "description": "Seção Hero premium e sofisticada para artes esportivas editáveis de Instagram.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

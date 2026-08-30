@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="50%" stop-color="#121212"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </linearGradient>
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCE0AD"/>
+      <stop offset="50%" stop-color="#DDA853"/>
+      <stop offset="100%" stop-color="#9A6F1A"/>
+    </linearGradient>
+    <radialGradient id="glow-grad" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#DDA853" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#DDA853" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bg-grad)"/>
+  <rect width="100%" height="100%" fill="url(#glow-grad)"/>
+  
+  <!-- Border -->
+  <rect x="15" y="15" width="470" height="470" rx="15" fill="none" stroke="url(#gold-grad)" stroke-width="2" opacity="0.8"/>
+  <rect x="22" y="22" width="456" height="456" rx="10" fill="none" stroke="#DDA853" stroke-width="0.5" opacity="0.3" stroke-dasharray="5 5"/>
+  
+  <!-- Field Lines (Tactical Vibe) -->
+  <path d="M 50,250 L 450,250" stroke="#ffffff" stroke-width="0.75" opacity="0.1"/>
+  <circle cx="250" cy="250" r="60" fill="none" stroke="#ffffff" stroke-width="0.75" opacity="0.1"/>
+  <circle cx="250" cy="250" r="3" fill="#ffffff" opacity="0.15"/>
+  <path d="M 150,50 L 350,50 L 350,110 L 150,110 Z" fill="none" stroke="#ffffff" stroke-width="0.75" opacity="0.1"/>
+  <path d="M 150,450 L 350,450 L 350,390 L 150,390 Z" fill="none" stroke="#ffffff" stroke-width="0.75" opacity="0.1"/>
+  
+  <!-- Header -->
+  <g transform="translate(250, 60)" text-anchor="middle">
+    <text font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="900" font-size="11" letter-spacing="4" fill="url(#gold-grad)" y="-15">MONUMENTAL LEAGUE</text>
+    <text font-family="'Impact', 'Arial Black', sans-serif" font-size="34" letter-spacing="2" fill="#ffffff" y="20">SELEÇÃO DA RODADA</text>
+    <text font-family="'Inter', sans-serif" font-weight="500" font-size="10" letter-spacing="6" fill="#DDA853" opacity="0.9" y="38">OS MELHORES DA SEMANA</text>
+    <line x1="-80" y1="48" x2="80" y2="48" stroke="url(#gold-grad)" stroke-width="1.5" opacity="0.6"/>
+  </g>
+
+  <!-- Player Dots / Lineup Representation -->
+  <g transform="translate(0, 40)">
+    <!-- GK (Marcos) -->
+    <g transform="translate(250, 350)">
+      <circle r="16" fill="#121212" stroke="url(#gold-grad)" stroke-width="2"/>
+      <circle r="12" fill="#FCE0AD" opacity="0.1"/>
+      <text font-family="'Inter', sans-serif" font-weight="900" font-size="10" fill="#ffffff" text-anchor="middle" y="3">1</text>
+      <text font-family="'Inter', sans-serif" font-weight="700" font-size="9" fill="#ffffff" text-anchor="middle" y="26">M. LIMA</text>
+      <text font-family="'Inter', sans-serif" font-size="7" fill="#DDA853" text-anchor="middle" y="34">GK</text>
+    </g>
+    <!-- DEF Left (Carlos) -->
+    <g transform="translate(130, 270)">
+      <circle r="16" fill="#121212" stroke="#ffffff" stroke-width="1.5" opacity="0.8"/>
+      <text font-family="'Inter', sans-serif" font-weight="900" font-size="10" fill="#ffffff" text-anchor="middle" y="3">5</text>
+      <text font-family="'Inter', sans-serif" font-weight="700" font-size="9" fill="#ffffff" text-anchor="middle" y="26">C. OLIVEIRA</text>
+    </g>
+    <!-- DEF Right (Pedro) -->
+    <g transform="translate(370, 270)">
+      <circle r="16" fill="#121212" stroke="#ffffff" stroke-width="1.5" opacity="0.8"/>
+      <text font-family="'Inter', sans-serif" font-weight="900" font-size="10" fill="#ffffff" text-anchor="middle" y="3">4</text>
+      <text font-family="'Inter', sans-serif" font-weight="700" font-size="9" fill="#ffffff" text-anchor="middle" y="26">P. MARTINS</text>
+    </g>
+    <!-- MID Central (Rafael) -->
+    <g transform="translate(250, 220)">
+      <circle r="16" fill="#121212" stroke="#ffffff" stroke-width="1.5" opacity="0.8"/>
+      <text font-family="'Inter', sans-serif" font-weight="900" font-size="10" fill="#ffffff" text-anchor="middle" y="3">8</text>
+      <text font-family="'Inter', sans-serif" font-weight="700" font-size="9" fill="#ffffff" text-anchor="middle" y="26">R. ALMEIDA</text>
+    </g>
+    <!-- MID Left (Diego) -->
+    <g transform="translate(140, 160)">
+      <circle r="16" fill="#121212" stroke="#ffffff" stroke-width="1.5" opacity="0.8"/>
+      <text font-family="'Inter', sans-serif" font-weight="900" font-size="10" fill="#ffffff" text-anchor="middle" y="3">11</text>
+      <text font-family="'Inter', sans-serif" font-weight="700" font-size="9" fill="#ffffff" text-anchor="middle" y="26">D. COSTA</text>
+    </g>
+    <!-- MID Right (João) -->
+    <g transform="translate(360, 160)">
+      <circle r="16" fill="#121212" stroke="#ffffff" stroke-width="1.5" opacity="0.8"/>
+      <text font-family="'Inter', sans-serif" font-weight="900" font-size="10" fill="#ffffff" text-anchor="middle" y="3">7</text>
+      <text font-family="'Inter', sans-serif" font-weight="700" font-size="9" fill="#ffffff" text-anchor="middle" y="26">J. FERREIRA</text>
+    </g>
+    <!-- ATT MVP (Lucas Santos) -->
+    <g transform="translate(250, 100)">
+      <circle r="22" fill="#121212" stroke="url(#gold-grad)" stroke-width="3"/>
+      <circle r="18" fill="#DDA853" opacity="0.2"/>
+      <text font-family="'Inter', sans-serif" font-weight="900" font-size="12" fill="url(#gold-grad)" text-anchor="middle" y="4">10</text>
+      <text font-family="'Inter', sans-serif" font-weight="900" font-size="10" fill="url(#gold-grad)" text-anchor="middle" y="32">LUCAS SANTOS</text>
+      <text font-family="'Inter', sans-serif" font-weight="700" font-size="7" letter-spacing="1" fill="#ffffff" text-anchor="middle" y="42">CRAQUE DA RODADA</text>
+    </g>
+  </g>
+  
+  <!-- Footer Brand -->
+  <g transform="translate(250, 450)" text-anchor="middle">
+    <text font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="9" letter-spacing="3" fill="#666666">ELITE FOOTBALL CREATIVE</text>
+  </g>
+</svg>

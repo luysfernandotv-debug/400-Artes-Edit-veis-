@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="50%" stop-color="#121212"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </linearGradient>
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCE0AD"/>
+      <stop offset="50%" stop-color="#DDA853"/>
+      <stop offset="100%" stop-color="#9A6F1A"/>
+    </linearGradient>
+    <radialGradient id="pitch-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#DDA853" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bg-grad)"/>
+  <rect width="100%" height="100%" fill="url(#pitch-glow)"/>
+  
+  <!-- Border -->
+  <rect x="15" y="15" width="470" height="470" rx="15" fill="none" stroke="url(#gold-grad)" stroke-width="2" opacity="0.8"/>
+  <rect x="22" y="22" width="456" height="456" rx="10" fill="none" stroke="#DDA853" stroke-width="0.5" opacity="0.2" stroke-dasharray="4 4"/>
+  
+  <!-- Header -->
+  <g transform="translate(250, 70)" text-anchor="middle">
+    <text font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="900" font-size="11" letter-spacing="4" fill="url(#gold-grad)" y="-15">MONUMENTAL LEAGUE</text>
+    <text font-family="'Impact', 'Arial Black', sans-serif" font-size="34" letter-spacing="2" fill="#ffffff" y="20">TIME DA RODADA</text>
+    <text font-family="'Inter', sans-serif" font-weight="500" font-size="10" letter-spacing="6" fill="#DDA853" opacity="0.9" y="38">GALERIA DOS MELHORES JOGADORES</text>
+    <line x1="-80" y1="48" x2="80" y2="48" stroke="url(#gold-grad)" stroke-width="1.5" opacity="0.6"/>
+  </g>
+
+  <!-- Soccer Pitch Tactical Diagram -->
+  <g transform="translate(50, 160)">
+    <rect width="400" height="240" rx="10" fill="#0c0c0c" stroke="#222" stroke-width="1.5"/>
+    <!-- Pitch Markings -->
+    <line x1="200" y1="0" x2="200" y2="240" stroke="#222" stroke-width="1.5"/>
+    <circle cx="200" cy="120" r="40" fill="none" stroke="#222" stroke-width="1.5"/>
+    <!-- Goal areas -->
+    <rect x="0" y="60" width="40" height="120" fill="none" stroke="#222" stroke-width="1.5"/>
+    <rect x="360" y="60" width="40" height="120" fill="none" stroke="#222" stroke-width="1.5"/>
+    
+    <!-- Players on the pitch -->
+    <!-- Goalkeeper (left) -->
+    <g transform="translate(30, 120)">
+      <circle r="8" fill="#DDA853"/>
+      <text font-family="'Inter', sans-serif" font-weight="700" font-size="7" fill="#ffffff" text-anchor="middle" y="16">M. Lima</text>
+    </g>
+    
+    <!-- Defenders -->
+    <g transform="translate(100, 50)">
+      <circle r="7" fill="#fff" opacity="0.9"/>
+      <text font-family="'Inter', sans-serif" font-weight="700" font-size="7" fill="#888" text-anchor="middle" y="14">C. Oliveira</text>
+    </g>
+    <g transform="translate(100, 120)">
+      <circle r="7" fill="#fff" opacity="0.9"/>
+      <text font-family="'Inter', sans-serif" font-weight="700" font-size="7" fill="#888" text-anchor="middle" y="14">P. Martins</text>
+    </g>
+    <g transform="translate(100, 190)">
+      <circle r="7" fill="#fff" opacity="0.9"/>
+      <text font-family="'Inter', sans-serif" font-weight="700" font-size="7" fill="#888" text-anchor="middle" y="14">R. Santos</text>
+    </g>
+    
+    <!-- Midfielders -->
+    <g transform="translate(200, 40)">
+      <circle r="7" fill="#fff" opacity="0.9"/>
+      <text font-family="'Inter', sans-serif" font-weight="700" font-size="7" fill="#888" text-anchor="middle" y="14">D. Costa</text>
+    </g>
+    <g transform="translate(200, 120)">
+      <circle r="7" fill="#DDA853"/>
+      <text font-family="'Inter', sans-serif" font-weight="700" font-size="7" fill="#ffffff" text-anchor="middle" y="14">R. Almeida</text>
+    </g>
+    <g transform="translate(200, 200)">
+      <circle r="7" fill="#fff" opacity="0.9"/>
+      <text font-family="'Inter', sans-serif" font-weight="700" font-size="7" fill="#888" text-anchor="middle" y="14">J. Ferreira</text>
+    </g>
+    
+    <!-- Attackers -->
+    <g transform="translate(300, 70)">
+      <circle r="7" fill="#DDA853"/>
+      <text font-family="'Inter', sans-serif" font-weight="700" font-size="7" fill="#ffffff" text-anchor="middle" y="14">Lucas S.</text>
+    </g>
+    <g transform="translate(300, 170)">
+      <circle r="7" fill="#fff" opacity="0.9"/>
+      <text font-family="'Inter', sans-serif" font-weight="700" font-size="7" fill="#888" text-anchor="middle" y="14">B. Silva</text>
+    </g>
+  </g>
+  
+  <!-- Footer Brand -->
+  <g transform="translate(250, 460)" text-anchor="middle">
+    <text font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="9" letter-spacing="3" fill="#666666">ELITE FOOTBALL CREATIVE</text>
+  </g>
+</svg>

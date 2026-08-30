@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Resource Hints for Performance Optimization -->
+    <link rel="preconnect" href="https://i.ibb.co" crossorigin />
+    <link rel="dns-prefetch" href="https://i.ibb.co" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://cdn.utmify.com.br" />
+    <link rel="dns-prefetch" href="https://app.litevideo.net" />
+    <link rel="dns-prefetch" href="https://pay.lowify.com.br" />
+    <link rel="dns-prefetch" href="https://starhosted.com.br" />
+
+    <script>
+      (function() {
+        // Fix for "Cannot set property fetch of #<Window> which has only a getter" & ipapi.co "Rate exceeded" issue
+        try {
+          var _origFetch = window.fetch;
+
+          function handleFetch(input, init) {
+            var url = typeof input === 'string' ? input : (input && input.url ? input.url : '');
+            if (url && (url.indexOf('ipapi.co') !== -1 || url.indexOf('ipify.org') !== -1)) {
+              var mockGeo = {
+                ip: "177.0.0.1",
+                country: "BR",
+                country_code: "BR",
+                country_name: "Brazil"
+              };
+              return Promise.resolve(new Response(JSON.stringify(mockGeo), {
+                status: 200,
+                statusText: "OK",
+                headers: { "Content-Type": "application/json" }
+              }));
+            }
+            return _origFetch ? _origFetch.apply(this, arguments) : Promise.reject(new Error('fetch unavailable'));
+          }
+
+          var _currentFetch = handleFetch;
+
+          Object.defineProperty(window, 'fetch', {
+            get: function() {
+              return _currentFetch;
+            },
+            set: function(newFetch) {
+              if (typeof newFetch === 'function') {
+                _currentFetch = function(input, init) {
+                  var url = typeof input === 'string' ? input : (input && input.url ? input.url : '');
+                  if (url && (url.indexOf('ipapi.co') !== -1 || url.indexOf('ipify.org') !== -1)) {
+                    var mockGeo = {
+                      ip: "177.0.0.1",
+                      country: "BR",
+                      country_code: "BR",
+                      country_name: "Brazil"
+                    };
+                    return Promise.resolve(new Response(JSON.stringify(mockGeo), {
+                      status: 200,
+                      statusText: "OK",
+                      headers: { "Content-Type": "application/json" }
+                    }));
+                  }
+                  return newFetch.apply(this, arguments);
+                };
+              } else {
+                _currentFetch = newFetch;
+              }
+            },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (err) {
+          console.warn('Fetch interceptor init:', err);
+        }
+
+        // Safe patch for JSON.stringify against circular references
+        var originalStringify = JSON.stringify;
+        JSON.stringify = function(value, replacer, space) {
+          var cache = new WeakSet();
+          function safeReplacer(key, val) {
+            if (typeof val === 'object' && val !== null) {
+              if (typeof Node !== 'undefined' && val instanceof Node) {
+                return '[DOM Element]';
+              }
+              if (cache.has(val)) {
+                return '[Circular]';
+              }
+              cache.add(val);
+            }
+            if (typeof replacer === 'function') {
+              return replacer.call(this, key, val);
+            }
+            return val;
+          }
+          try {
+            return originalStringify(value, typeof replacer === 'function' ? safeReplacer : replacer, space);
+          } catch (err) {
+            try {
+              return originalStringify(value, safeReplacer, space);
+            } catch (err2) {
+              return 'null';
+            }
+          }
+        };
+      })();
+    </script>
+    <script
+      src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+      data-utmify-prevent-xcod-sck
+      data-utmify-prevent-subids
+      async
+      defer
+    ></script>
+    <script>
+      window.pixelId = "6a3dd3ea7d30a1a65825fd62";
+      var a = document.createElement("script");
+      a.setAttribute("async", "");
+      a.setAttribute("defer", "");
+      a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+      document.head.appendChild(a);
+    </script>
+    <script>
+      (function() {
+        // Global handler for unhandled promise rejections (e.g. third-party tracking Failed to fetch)
+        window.addEventListener('unhandledrejection', function(event) {
+          if (event && event.reason) {
+            var msg = event.reason.message || String(event.reason);
+            if (msg.indexOf('Failed to fetch') !== -1 || msg.indexOf('NetworkError') !== -1) {
+              event.preventDefault();
+            }
+          }
+        });
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artes Esportivas Premium</title>
+    <meta name="description" content="Mais de 400 artes esportivas editáveis de Instagram para futebol amador, peladas e campeonatos." />
+    <!-- LiteVideo script -->
+    <script src="https://app.litevideo.net/p.js" async defer></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
